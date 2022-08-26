@@ -18,9 +18,7 @@ conda install -c conda-forge gdal
 ```python
 python downloader_gmtchina.py 起始经度 结束经度 起始纬度 结束纬度 地图层级 输出图片文件名 地图来源
 ```
-```python
 
-```
 ## 问题/Issues
 If you encounter the problem of Bad network link, you can change the HEADERS in the download function, and try again.
 ```python

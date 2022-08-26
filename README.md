@@ -10,7 +10,7 @@
 
 ## 指南/Guide
 ### 安装/Install
-```python
+```shell
 conda install -c anaconda numpy pillow py-opencv
 conda install -c conda-forge gdal 
 ```
@@ -19,23 +19,21 @@ conda install -c conda-forge gdal
 此外，境内用户需确保能够正常使用谷歌地图网页版才能使用本工具下载谷歌地图。
 
 提供如下参数运行脚本，即可下载 tif 格式地图:
-```python
+```shell
 python downloader_gmtchina.py 起始经度 结束经度 起始纬度 结束纬度 地图层级 输出图片文件名 地图来源
 ```
 地图层级取 0 - 22 之间的整数，值越高分辨率越大。地图来源目前可以选择以下四个:
 
-=========== =========
-代码         地图来源
-=========== =========
-amap        高德地图
-amap_sat    高德卫星图
-google      谷歌地图
-google_sat  谷歌卫星图
-=========== =========
+|代码|地图来源|
+|  ----  | ----  |
+|amap     |   高德地图|
+|amap_sat  |  高德卫星图|
+|google    |  谷歌地图|
+|google_sat | 谷歌卫星图|
 
 以厦门市为例，使用如下参数下载四种地图:
 
-```python
+```shell
 python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 12 google.tif google
 python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 16 google_sat.tif google_sat
 python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 12 amap.tif amap

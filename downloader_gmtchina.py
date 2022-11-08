@@ -257,7 +257,7 @@ def saveTiff(r, g, b, gt, filePath):
 # ---------------------------------------------------------
 MAP_URLS = {
     "google": "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}",
-    "google_sat": "http://mts0.googleapis.com/vt?lyrs={style}&x={x}&y={y}&z={z}",
+    "google_sat": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
     "amap": "https://webrd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}",
     "amap_sat": "https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}"
     }
@@ -271,7 +271,7 @@ def get_url(source, x, y, z, style):  #
     elif source == 'google':
         url = MAP_URLS["google"].format(x=x, y=y, z=z)
     elif source == 'google_sat':
-        url = MAP_URLS["google_sat"].format(x=x, y=y, z=z, style=style)
+        url = MAP_URLS["google_sat"].format(x=x, y=y, z=z)
     else:
         raise Exception("Unknown Map Source ! ")
     return url

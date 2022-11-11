@@ -41,10 +41,12 @@ python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 16 amap_
 ```
 
 ## 问题/Issues
-If you encounter the problem of Bad network link, you can change the HEADERS in the download function, and try again.
+如果出现 Bad network link 报错，请在代码中修改 HEADERS 再试一次
 ```python
 def download(self,url):
         HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36'}
+        # 如果以上 Header不行，再尝试下面的 Header
+        # 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE'
         header = ur.Request(url,headers=HEADERS)
         err=0
         while(err<3):

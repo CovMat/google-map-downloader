@@ -12,12 +12,15 @@
 ### 初学者必看
 本下载器是 python 脚本，必须会使用conda和python才能使用本工具。如果你对conda和python一无所知，请先学习这个教程： https://www.bilibili.com/video/BV1Mv411x775 ，看到17分58秒即可，视频后段的tensorflow不要安装。请注意没有学会掌握 conda 那么接下来的所有内容对你来说都没有任何意义！
 
-### 安装/Install
+### 安装运行所需的必要软件包
 ```shell
 conda install -c anaconda numpy pillow py-opencv
 conda install -c conda-forge gdal 
 ```
-### 使用/Use
+### 下载
+右键另存为下载： https://raw.githubusercontent.com/CovMat/google-map-downloader/master/downloader_gmtchina.py
+
+### 使用
 国内的地图服务均进行过GCJ02坐标系加密，因此这个工具对高德地图、高德卫星图与谷歌地图进行了GCJ02到WGS84坐标系的变换。谷歌卫星图则不需要进行变换。
 此外，境内用户需确保能够正常使用谷歌地图网页版才能使用本工具下载谷歌地图。
 

@@ -6,7 +6,7 @@
 
 ## 指南/Guide
 ### 初学者必看
-本下载器是 python 脚本，必须会使用conda和python才能使用本工具。如果你对conda和python一无所知，请先学习这个教程： https://www.bilibili.com/video/BV1Mv411x775 ，看到17分58秒即可，视频后段的tensorflow不要安装。请注意没有学会掌握 conda 那么接下来的所有内容对你来说都没有任何意义！
+本下载器是 python 脚本，必须会使用conda和python才能使用本工具。如果你对conda和python一无所知，请先学习这个教程： https://seismo-learn.org/software/conda/。请注意没有学会掌握 conda 那么接下来的所有内容对你来说都没有任何意义！
 
 ### 安装运行所需的必要软件包
 ```shell

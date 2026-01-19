@@ -37,9 +37,9 @@ python downloader_gmtchina.py 起始经度 结束经度 起始纬度 结束纬�
 
 ```shell
 python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 12 google.tif google
-python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 16 google_sat.tif google_sat
+python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 12 google_sat.tif google_sat
 python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 12 amap.tif amap
-python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 16 amap_sat.tif amap_sat
+python downloader_gmtchina.py 118.055917 118.244753 24.399450 24.559724 12 amap_sat.tif amap_sat
 ```
 
 ## 问题/Issues

@@ -11,8 +11,7 @@
 
 ### 安装运行所需的必要软件包
 ```shell
-conda install -c anaconda numpy pillow py-opencv
-conda install -c conda-forge gdal 
+conda install -c conda-forge opencv numpy pillow gdal
 ```
 ### 下载
 右键另存为下载： https://raw.githubusercontent.com/CovMat/google-map-downloader/master/downloader_gmtchina.py

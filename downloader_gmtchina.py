@@ -22,6 +22,7 @@ import PIL.Image as pil
 import cv2
 import numpy as np
 from osgeo import gdal, osr
+gdal.UseExceptions()
 
 
 # ------------------Interchange between WGS-84 and Web Mercator-------------------------
